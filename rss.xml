@@ -1,4 +1,145 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by John Doe]]></title><description><![CDATA[Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.]]></description><link>https://haileyself.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Sat, 10 Aug 2019 12:58:15 GMT</lastBuildDate><item><title><![CDATA[20190729 TIL]]></title><description><![CDATA[HTML과 CSS 기초내용 복습]]></description><link>https://haileyself.github.io//posts/til-htmlandcss/</link><guid isPermaLink="false">https://haileyself.github.io//posts/til-htmlandcss/</guid><pubDate>Fri, 09 Aug 2019 22:33:37 GMT</pubDate><content:encoded>&lt;p&gt;안녕하세요 hailey입니다&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by John Doe]]></title><description><![CDATA[Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.]]></description><link>https://haileyself.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 11 Aug 2019 05:21:17 GMT</lastBuildDate><item><title><![CDATA[20190729 TIL - 2]]></title><description><![CDATA[HTML과 CSS 기초내용 복습_2]]></description><link>https://haileyself.github.io//posts/til-htmlandcss_2/</link><guid isPermaLink="false">https://haileyself.github.io//posts/til-htmlandcss_2/</guid><pubDate>Sat, 10 Aug 2019 22:25:37 GMT</pubDate><content:encoded>&lt;p&gt;안녕하세요 hailey입니다&lt;br&gt;
+현재 저는 비전공자로서 ‘위코드’라는 코딩부트캠프에서
+프론트엔드 개발을 배우고 있습니다.&lt;/p&gt;
+&lt;p&gt;제가 부트캠프를 시작하며
+배운 내용들을 정리하고자 만든 블로그이니,
+잘못된 정보가 있다면 언제든지 조언 및 충고 부탁드립니다.&lt;/p&gt;
+&lt;p&gt;첫째날 배우고 복습한 내용이 많아서 나눠서 올리려고 합니다.&lt;/p&gt;
+&lt;h2 id=&quot;9-font-style&quot;&gt;&lt;a href=&quot;#9-font-style&quot; aria-label=&quot;9 font style permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;9. font style&lt;/h2&gt;
+&lt;h3 id=&quot;1-font-family--폰트1-폰트2-폰트3&quot;&gt;&lt;a href=&quot;#1-font-family--%ED%8F%B0%ED%8A%B81-%ED%8F%B0%ED%8A%B82-%ED%8F%B0%ED%8A%B83&quot; aria-label=&quot;1 font family  폰트1 폰트2 폰트3 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;(1) font-family : 폰트1, 폰트2, 폰트3&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;폰트1 있으면 폰트1 적용 // 없으면 폰트 2 적용 // 그다음 없으면 폰트3 적용
+마지막에는 그래서 특정폰트가 아닌 &amp;#39;글씨체&amp;#39;를 지정해준다&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;2-font-color&quot;&gt;&lt;a href=&quot;#2-font-color&quot; aria-label=&quot;2 font color permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;(2) font color&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;content에 색을 주고 싶을 때는 color property를 써서 색상을 정해준다&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;색상을 표현하는 방법에는 여러가지가 있다
+(hex 색상코드, rgb값, hsl ) 
+모든 색상을 기억할 수 없기때문에 
+color picker hex color / color picker 를 구글에 검색 하면 
+내가 원하는 색상을 알 수 있음! 
+hex에서 rgb로 색상표현법을 바꾸고 싶으면 color hex to rgb 를 구글링 ! &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;10-text-align&quot;&gt;&lt;a href=&quot;#10-text-align&quot; aria-label=&quot;10 text align permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;10. Text align&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;글씨를 정렬하는 방법&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;html에서 기본적인 정렬위치는 왼쪽정렬
+cf. span 태그의 경우 inline element이기때문에 
+오른쪽 정렬을 줬음에도 불구하고 적용이 안된다.
+왜냐면 element는 요소가 차지하는 영역안에서 정렬을 하게 된다. 
+그러므로 block element를 정렬시에 사용(대표적으로 div 나 p로 묶어준다)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;11-text-indent&quot;&gt;&lt;a href=&quot;#11-text-indent&quot; aria-label=&quot;11 text indent permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;11. Text-indent&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;글자들여쓰기&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;text-indent: 50px;
+-&amp;gt; 50px만큼 글씨가 들여쓰기된다.
+해당 indent 속성을 주지 않을 경우에는 스페이스를 직접 html에 추가하면 된다.
+html에서는 아무리 스페이스바로 띄어쓰기를 만들어도 적용이 안된다
+&amp;amp;nbsp;  
+--&amp;gt; 이 값이 html에서 스페이스를 뜻하는 의미이기때문에, 이 값을 추가해주면된다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;12-blockquote&quot;&gt;&lt;a href=&quot;#12-blockquote&quot; aria-label=&quot;12 blockquote permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;12. blockquote&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;인용구문을 넣을 때 주로 쓰는 태그 (들여쓰기 및 양쪽여백 자동적용)&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;13-레이아웃-관련-표현들&quot;&gt;&lt;a href=&quot;#13-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83-%EA%B4%80%EB%A0%A8-%ED%91%9C%ED%98%84%EB%93%A4&quot; aria-label=&quot;13 레이아웃 관련 표현들 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;13. 레이아웃 관련 표현들&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;(1) padding : element 와 border 사이에 있는 공간
+    - padding 값주는 법: padding 과 margin 값은 위/오른/아래/왼 순서대로 크기를 지정해서 써주면 된다.
+   Ex. padding: 10px 5px 10px 5px
+(2) border : 테두리 
+    - 테두리의 style 효과를 줄때는 &amp;#39;두께 선스타일 선색&amp;#39; 순서로 속성 값을 준다.
+    Ex.
+    border : 1px solid red; 
+    
+    cf. solid는 기본적인 선을 말하며 거의 기본적으로 solid 선 스타일을 가장 많이 사용함 / 
+    underline 효과를 줄 때 보통 text-decoration 보다는 border - bottom을 이용해서 다양한 선스타일 주기도 함)
+(3) margin : 테두리바깥 요소와 요소 사이의 공간
+    -margin 값 주는 법 :margin 값도 padding값과 마찬가지로 위 오른쪽 아래 왼쪽 이순서대로 크기를 지정해서 써주면 된다.
+    Ex.
+    margin : 10px 5px 10px 5px;
+    margin: 20px auto;  (위아래는 20px / 좌우로는 auto로 준다는 뜻)
+    margin: 10px; (사방으로 같은 10px 값을 준다는 뜻)
+
+(4) box-sizing property
+    : 눈으로 보이는 너비와 개발자가 코딩하는 넓이가 다르면 안되니때문에
+    거의 대부분의 웹페이지는 box-sizing : border-box; 라는 프로퍼티와 속성을 준다.
+    해당 속성을 주면 / padding과 border 를 합친 값을 전체 width / height으로 볼 수 있다.
+
+    - 해당 내용은 일일히 적용하기 어렵기때문에,
+        * { 
+        box-sizing:border-box; 
+        }
+        이렇게 표현  여기서 &amp;#39;*&amp;#39;는 html내의 전체모든 요소를 의미한다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;14-상속&quot;&gt;&lt;a href=&quot;#14-%EC%83%81%EC%86%8D&quot; aria-label=&quot;14 상속 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;14. 상속&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt; 상속이라는 말은 말그대로 CSS가 가진 특성 그대로 적용한 스타일이 상속되어 자식tag에게도 같은 스타일이 적용된다는 것이다.
+    예를들어, 
+        body{
+            color: red; 
+            font-size : 14px
+        }
+
+        body에 빨간색글자와 14px 의 글자크기라는 스타일이 적용되면 
+        &amp;lt;body&amp;gt;
+        p&amp;gt; 내용&amp;lt;/p&amp;gt;
+        &amp;lt;/body&amp;gt;
+
+        이런식으로 구성된 &amp;lt;p&amp;gt; tag에는 아무 속성도 주지않았으나 부모에게 적용한 속성이 적용되는 것이다.
+
+** 만약 부모에게 속성이 주어져도, 해당 요소가 자신만의 스타일속성을 가지고 있다면 본인 스타일이 적용된다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;15-선택자-지정의-다양한-방법&quot;&gt;&lt;a href=&quot;#15-%EC%84%A0%ED%83%9D%EC%9E%90-%EC%A7%80%EC%A0%95%EC%9D%98-%EB%8B%A4%EC%96%91%ED%95%9C-%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;15 선택자 지정의 다양한 방법 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;15. 선택자 지정의 다양한 방법&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    (1) 여러개의 선택자 지정방법
+    : 앞서 설명했듯이 여러개의 선택자를 지정하기 위해서는 &amp;#39;,&amp;#39;로 구분해서 selector를 적으면 된다.
+    Ex.
+    p, .search_box {
+    color: gray;
+    }
+
+    (2) 조건을 여러개가진 선택자 지정방법
+    : 예를들어 p 태그 이면서 p-tag 라는 클래스 이름을 가진 요소를 특정하기 위해서는 아래와 같이 CSS를 작성하고 적는다.
+
+    Ex.
+    p.name{
+        color:gray;
+    }
+
+    이렇게 적은 내용은 p태그이면서 name이라는 클래스를 가진 (즉, 두개에 다 해당되는) 요소를 선택해서
+    글자색을 회색으로 주는 style 속성을 준다는 것이다.
+
+    * 기억해두기&amp;gt; 태그랑 클래스값을 띄어쓰기 안하고 쓰면 태그이면서 클래스인 요소를 찾아서 style 주는 것!
+
+    Ex. .top-header.search-box {
+        background-color: powderblue;
+    }
+
+    이렇게 쓰면 
+    &amp;lt;div class=&amp;quot;top-header&amp;quot; &amp;quot;search-box&amp;quot;&amp;gt;
+
+    이렇게 top-header 이면서 search-box라는 클래스를 2개 가지고 있는 요소를 선택해서 backgroundcolor 효과를 
+    주는 것이다.
+
+
+    (3)선택자 아래에 있는 요소를 선택하는 방법
+    : top_header 클래스 아래에 있는 search_box 클래스를 특정해서 지정하기 위해서는 
+    부모선택자(띄어쓰기)자식선택자 순서로 적어주면 된다.
+
+    Ex. .pre span {
+
+        font-size:22px;
+    }
+
+    pre 라는 이름을 가진 클래스에 아래에 있는 span 태그에게 font-size 22px이라는 속성을 적용한다는 뜻.
+    (pre 클래스의 내부의 span 태그에 해당 속성이 적용되는데, CSS작성할 때 {} 중괄호 바로 앞에 나오는 요소에
+    해당 속성이 적용된다. span 태그가 per class에 아주 아래쪽에 위치하고 있다고 하더라도 적용이 된다.)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;16-선택자의-우선순위&quot;&gt;&lt;a href=&quot;#16-%EC%84%A0%ED%83%9D%EC%9E%90%EC%9D%98-%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84&quot; aria-label=&quot;16 선택자의 우선순위 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;16. 선택자의 우선순위&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    * 우선순위의 차이
+        inline CSS &amp;gt;&amp;gt;&amp;gt; id &amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; class &amp;gt;&amp;gt;&amp;gt; tag 
+        이 우선순위에 따라 스타일 값이 지정된다. 대부분의 요소에 class 를 부여해주고 중복을 피해 스타일링해주면 된다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;17assignment-참고사항&quot;&gt;&lt;a href=&quot;#17assignment-%EC%B0%B8%EA%B3%A0%EC%82%AC%ED%95%AD&quot; aria-label=&quot;17assignment 참고사항 permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;17.Assignment 참고사항&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;        .container header p.title {
+            font-size : 50px; 
+        }
+
+        container 클래스아래에 있는 header tag 아래에 있는 **p tag 이면서 title 이라는 클래스** 를 가진 
+        element에 font-size 50px라는 효과를 준다.
+
+        (여기서 주의할 점은 container 클래스 바로 아래에 header 태그가 있어야 될 필요는 없다는 것이다.
+        어쨌든 안에만 들어오면 된다.) 
+*
+        ** 기억해야 될 부분 **
+            1. 띄어쓰기가 선택자와 선택자 사이에 없으면 동시에 가진 요소를 찾는 것
+            2. 띄어쓰기가 선택자와 선택자 사이에 있으면 앞 선택자에 포함된 선택자를 찾는 것 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[20190729 TIL]]></title><description><![CDATA[HTML과 CSS 기초내용 복습]]></description><link>https://haileyself.github.io//posts/til-htmlandcss/</link><guid isPermaLink="false">https://haileyself.github.io//posts/til-htmlandcss/</guid><pubDate>Fri, 09 Aug 2019 22:33:37 GMT</pubDate><content:encoded>&lt;p&gt;안녕하세요 hailey입니다&lt;br&gt;
 현재 저는 비전공자로서 ‘위코드’라는 코딩부트캠프에서
 프론트엔드 개발을 배우고 있습니다.&lt;/p&gt;
 &lt;p&gt;제가 부트캠프를 시작하며
