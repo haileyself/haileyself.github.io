@@ -89,25 +89,24 @@ top, right, bottom, left 값을 주어서 위치를 지정하고 거기에 고�
 ## 2. HTML Layout
 
 **HTML 웹페이지는 주로 이러한 layout을 가지고 있다.**
-![html layout](https://www.w3schools.com/html/img_sem_elements.gif)
-각 태그는 semantic tag들로서 각 태그 이름자체가 의미를 가지고 있는 tag들이다.
 
- 1. section
-  **주로 제목을 포함한 내용의 그룹들을 section이라는 태그를 사용하여 제어한다.**
-  홈페이지는 보통 컨텐트, 내용정보, 소개 등의 섹션들로 나누어진다.
+<img src="https://www.w3schools.com/html/img_sem_elements.gif" vspace="20px" clear:both>
+
+ 
+*각 태그는 semantic tag들로서 각 태그 이름자체가 의미를 가지고 있는 tag들이다.
+    
+
+1. section :주로 제목을 포함한 내용의 그룹들을 section이라는 태그를 사용하여 제어한다.
+홈페이지는 보통 컨텐트, 내용정보, 소개 등의 섹션들로 나누어진다.
 
 
-2. article 
-**독립적이고 혼자만의 정보를 가지고 있는 요소들을 특정할 때, article을 쓴다.**
+1. article : 독립적이고 혼자만의 정보를 가지고 있는 요소들을 특정할 때, article을 쓴다.
 
+1. nav :navigation bar 나 , link들을 정의할 때 사용
 
-3. nav
-**navigation bar 나 , link들을 정의할 때 사용**
+1. aside : 적혀있는 내용 이외에 내용을 넣는 컨텐트를 표현할 때 사용
 
-4. aside 
-**적혀있는 내용 이외에 내용을 넣는 컨텐트를 표현할 때 사용**
-
-* 레이아웃은 한번에 잘짜기보다는 경험을 통해서 늘리고, 좋은 레이아웃을 가진 사이트에서 개발자도구를 보면서 어떻게 레이아웃을 잡았는지 알아가는 것이 중요 !
+*레이아웃은 한번에 잘짜기보다는 경험을 통해서 늘리고, 좋은 레이아웃을 가진 사이트에서 개발자도구를 보면서 어떻게 레이아웃을 잡았는지 알아가는 것이 중요*
 
 ## 3. Layout 잡을 때 주로 쓰이는 Property
 
