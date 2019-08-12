@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by John Doe]]></title><description><![CDATA[Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.]]></description><link>https://haileyself.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 12 Aug 2019 11:42:46 GMT</lastBuildDate><item><title><![CDATA[TIL - CSS Layout]]></title><description><![CDATA[CSS Layout]]></description><link>https://haileyself.github.io//posts/til-csslayout/</link><guid isPermaLink="false">https://haileyself.github.io//posts/til-csslayout/</guid><pubDate>Mon, 12 Aug 2019 20:30:37 GMT</pubDate><content:encoded>&lt;p&gt;안녕하세요~
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by John Doe]]></title><description><![CDATA[Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.]]></description><link>https://haileyself.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 12 Aug 2019 11:58:04 GMT</lastBuildDate><item><title><![CDATA[TIL - CSS Layout]]></title><description><![CDATA[CSS Layout]]></description><link>https://haileyself.github.io//posts/til-csslayout/</link><guid isPermaLink="false">https://haileyself.github.io//posts/til-csslayout/</guid><pubDate>Mon, 12 Aug 2019 20:30:37 GMT</pubDate><content:encoded>&lt;p&gt;안녕하세요~
 현재 프론트엔드 개발자를 꿈꾸며
 개발공부를 하고 있습니다 &lt;/p&gt;
 &lt;p&gt;제가 공부한 내용을 여기에 조금씩 정리해보려고 합니다!
@@ -67,21 +67,17 @@ top, right, bottom, left 값을 주어서 위치를 지정하고 거기에 고�
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&quot;2-html-layout&quot;&gt;&lt;a href=&quot;#2-html-layout&quot; aria-label=&quot;2 html layout permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. HTML Layout&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;HTML 웹페이지는 주로 이러한 layout을 가지고 있다.&lt;/strong&gt;
-&lt;img src=&quot;https://www.w3schools.com/html/img_sem_elements.gif&quot; alt=&quot;html layout&quot;&gt;
-각 태그는 semantic tag들로서 각 태그 이름자체가 의미를 가지고 있는 tag들이다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;HTML 웹페이지는 주로 이러한 layout을 가지고 있다.&lt;/strong&gt;&lt;/p&gt;
+&lt;img src=&quot;https://www.w3schools.com/html/img_sem_elements.gif&quot; vspace=&quot;20px&quot; clear:both&gt;
+&lt;p&gt;*각 태그는 semantic tag들로서 각 태그 이름자체가 의미를 가지고 있는 tag들이다.&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;section
-&lt;strong&gt;주로 제목을 포함한 내용의 그룹들을 section이라는 태그를 사용하여 제어한다.&lt;/strong&gt;
+&lt;li&gt;section :주로 제목을 포함한 내용의 그룹들을 section이라는 태그를 사용하여 제어한다.
 홈페이지는 보통 컨텐트, 내용정보, 소개 등의 섹션들로 나누어진다.&lt;/li&gt;
-&lt;li&gt;article
-&lt;strong&gt;독립적이고 혼자만의 정보를 가지고 있는 요소들을 특정할 때, article을 쓴다.&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;nav
-&lt;strong&gt;navigation bar 나 , link들을 정의할 때 사용&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;aside
-&lt;strong&gt;적혀있는 내용 이외에 내용을 넣는 컨텐트를 표현할 때 사용&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;레이아웃은 한번에 잘짜기보다는 경험을 통해서 늘리고, 좋은 레이아웃을 가진 사이트에서 개발자도구를 보면서 어떻게 레이아웃을 잡았는지 알아가는 것이 중요 !&lt;/li&gt;
+&lt;li&gt;article : 독립적이고 혼자만의 정보를 가지고 있는 요소들을 특정할 때, article을 쓴다.&lt;/li&gt;
+&lt;li&gt;nav :navigation bar 나 , link들을 정의할 때 사용&lt;/li&gt;
+&lt;li&gt;aside : 적혀있는 내용 이외에 내용을 넣는 컨텐트를 표현할 때 사용&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;레이아웃은 한번에 잘짜기보다는 경험을 통해서 늘리고, 좋은 레이아웃을 가진 사이트에서 개발자도구를 보면서 어떻게 레이아웃을 잡았는지 알아가는 것이 중요&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&quot;3-layout-잡을-때-주로-쓰이는-property&quot;&gt;&lt;a href=&quot;#3-layout-%EC%9E%A1%EC%9D%84-%EB%95%8C-%EC%A3%BC%EB%A1%9C-%EC%93%B0%EC%9D%B4%EB%8A%94-property&quot; aria-label=&quot;3 layout 잡을 때 주로 쓰이는 property permalink&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. Layout 잡을 때 주로 쓰이는 Property&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;float
