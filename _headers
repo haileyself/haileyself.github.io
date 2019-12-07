@@ -109,7 +109,7 @@
   Link: </styles-c7182faa4668bce8648b.js>; rel=preload; as=script
   Link: </commons-154e10f751268b0220d0.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-e4ec5dc7ada652d06487.js>; rel=preload; as=script
-/posts/the-birth-of-movable-type/
+/posts/a-brief-history-of-typography/
   Link: </webpack-runtime-ceb2fb89de3cfb581a89.js>; rel=preload; as=script
   Link: </styles-c7182faa4668bce8648b.js>; rel=preload; as=script
   Link: </commons-154e10f751268b0220d0.js>; rel=preload; as=script
@@ -127,16 +127,7 @@
   Link: </styles-c7182faa4668bce8648b.js>; rel=preload; as=script
   Link: </commons-154e10f751268b0220d0.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-e4ec5dc7ada652d06487.js>; rel=preload; as=script
-/posts/a-brief-history-of-typography/
-  Link: </webpack-runtime-ceb2fb89de3cfb581a89.js>; rel=preload; as=script
-  Link: </styles-c7182faa4668bce8648b.js>; rel=preload; as=script
-  Link: </commons-154e10f751268b0220d0.js>; rel=preload; as=script
-  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
-  Link: </app-ed5614858f0326025def.js>; rel=preload; as=script
-  Link: </styles-c7182faa4668bce8648b.js>; rel=preload; as=script
-  Link: </commons-154e10f751268b0220d0.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-e4ec5dc7ada652d06487.js>; rel=preload; as=script
-/posts/til-htmlandcss_3/
+/posts/the-birth-of-movable-type/
   Link: </webpack-runtime-ceb2fb89de3cfb581a89.js>; rel=preload; as=script
   Link: </styles-c7182faa4668bce8648b.js>; rel=preload; as=script
   Link: </commons-154e10f751268b0220d0.js>; rel=preload; as=script
@@ -146,6 +137,15 @@
   Link: </commons-154e10f751268b0220d0.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-e4ec5dc7ada652d06487.js>; rel=preload; as=script
 /posts/til-htmlandcss_2/
+  Link: </webpack-runtime-ceb2fb89de3cfb581a89.js>; rel=preload; as=script
+  Link: </styles-c7182faa4668bce8648b.js>; rel=preload; as=script
+  Link: </commons-154e10f751268b0220d0.js>; rel=preload; as=script
+  Link: </netlify-identity-widget-acb9f9e58c1eda4b61ce.js>; rel=preload; as=script
+  Link: </app-ed5614858f0326025def.js>; rel=preload; as=script
+  Link: </styles-c7182faa4668bce8648b.js>; rel=preload; as=script
+  Link: </commons-154e10f751268b0220d0.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-e4ec5dc7ada652d06487.js>; rel=preload; as=script
+/posts/til-htmlandcss_3/
   Link: </webpack-runtime-ceb2fb89de3cfb581a89.js>; rel=preload; as=script
   Link: </styles-c7182faa4668bce8648b.js>; rel=preload; as=script
   Link: </commons-154e10f751268b0220d0.js>; rel=preload; as=script
