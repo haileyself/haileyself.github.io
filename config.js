@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://haileyself.github.io/',
   // pathPrefix: '/',
   title: 'Blog By HyeMin',
-  subtitle: 'Self-motivated Front End Developer',
+  subtitle: '',
   copyright: '',
   disqusShortname: '',
   postsPerPage: 6,
@@ -25,13 +25,12 @@ module.exports = {
     // }
   ],
   author: {
-    name: 'HyeMin',
+    name: 'HyeMin Jeong',
     photo: '/photo.jpg',
-    bio: 'Self-motivated Front End Developer',
+    bio: 'Better than Yesterday !',
     contacts: {
       email: 'gpalsl215@gmail.com',
       github: 'haileyself',
-      linkedIn: 'hmself'
     }
   }
 };
