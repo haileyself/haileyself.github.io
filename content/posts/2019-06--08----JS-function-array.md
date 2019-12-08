@@ -1,14 +1,14 @@
 ---
-title: JavsScript 함수와 배열의 기초
+title: JavaScript 함수와 배열의 기초
 date: "2019-08-06T20:30:37.121Z"
 template: "post"
 draft: false
 slug: "/posts/til-javascript-basic/"
-category: "JavsScript"
+category: "JavaScript"
 tags:
   - "TIL"
   - "JAVASCRIPT"
-description: "JavsScript 함수와 배열의 기초"
+description: "JavaScript 함수와 배열의 기초"
 ---
 
 ## 1. Javascript의 함수
