@@ -1,6 +1,6 @@
 ---
-title: CSS 기초내용 복습 - Second
-date: "2019-08-03T22:25:37.121Z"
+title: HTML & CSS 기초내용 복습 - Second
+date: "2019-08-02T22:25:37.121Z"
 template: "post"
 draft: false
 slug: "/posts/til-htmlandcss_2/"
@@ -8,6 +8,7 @@ category: "HTMLandCSS"
 tags:
   - "TIL"
   - "CSS"
+  - "HTML"
 description: "CSS 기초내용 복습 - Second"
 ---
 
@@ -166,6 +167,7 @@ top_header 클래스 아래에 있는 search_box 클래스를 특정해서 지�
 .pre span {
   font-size: 22px;
 }
+
 /* pre 라는 이름을 가진 클래스에 아래에 있는 span 태그에게 font-size 22px이라는 속성을 적용한다는 뜻
     pre 클래스의 내부의 span 태그에 해당 속성이 적용되는데, CSS작성할 때 {} 중괄호 바로 앞에 나오는 요소에 해당 속성이 적용된다. span 태그가 per class에 아주 아래쪽에 위치하고 있다고 하더라도 적용이 된다. */
 ```
