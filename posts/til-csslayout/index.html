@@ -50,104 +50,94 @@
 
         gtag('config', 'UA-73379983-2', {"send_page_view":false});
       }
-      </script><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="icon" href="/icons/icon-48x48.png?v=76da1c5b225fea9f85044e27522451b5"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#F7A046"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=76da1c5b225fea9f85044e27522451b5"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=76da1c5b225fea9f85044e27522451b5"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=76da1c5b225fea9f85044e27522451b5"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=76da1c5b225fea9f85044e27522451b5"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=76da1c5b225fea9f85044e27522451b5"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=76da1c5b225fea9f85044e27522451b5"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=76da1c5b225fea9f85044e27522451b5"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=76da1c5b225fea9f85044e27522451b5"/><title data-react-helmet="true">TIL - CSS Layout - Blog By HyeMin</title><meta data-react-helmet="true" name="description" content="CSS Layout"/><meta data-react-helmet="true" property="og:site_name" content="TIL - CSS Layout - Blog By HyeMin"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:title" content="TIL - CSS Layout - Blog By HyeMin"/><link as="script" rel="preload" href="/webpack-runtime-ceb2fb89de3cfb581a89.js"/><link as="script" rel="preload" href="/netlify-identity-widget-acb9f9e58c1eda4b61ce.js"/><link as="script" rel="preload" href="/app-ed5614858f0326025def.js"/><link as="script" rel="preload" href="/styles-c7182faa4668bce8648b.js"/><link as="script" rel="preload" href="/commons-154e10f751268b0220d0.js"/><link as="script" rel="preload" href="/component---src-templates-post-template-js-e4ec5dc7ada652d06487.js"/><link as="fetch" rel="preload" href="/page-data/posts/til-csslayout/page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div class="Layout-module--layout--3Pyz6"><div><a class="Post-module--post__home-button--16Kl0" href="/">All Articles</a><div><div class="Content-module--content--3p512"><h1 class="Content-module--content__title--2BDW9">TIL - CSS Layout</h1><div class="Content-module--content__body--2TrQ-"><p>안녕하세요~
-현재 프론트엔드 개발자를 꿈꾸며
-개발공부를 하고 있습니다 </p>
-<p>제가 공부한 내용을 여기에 조금씩 정리해보려고 합니다!
-1일차 정리가 완료되어 이제 파트로 나눠서 정리하려고 합니다!</p>
-<p>CSS Layout</p>
-<h2 id="1-position-property"><a href="#1-position-property" aria-label="1 position property permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Position property</h2>
-<p><strong>position property는 element의 위치를 정하는데 사용함
-기본적인(statcic)을 제외하고 나머지 부분 정리</strong></p>
-<ol>
-<li>
-<p>relative
-그자체로는 특별한 의미가 없지만 원래 위치를 기준으로 배치됨.
-상대적으로 배치 된 요소의 top, right, bottom, left  속성을 설정하면 일반위치에서 멀어지도록 조정됨.
-보통위치에서 상대적으로 요소가 자리를 잡기때문에 top과 같은 프로퍼티가 필요하다</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">Ex.
-    div {
-    position : relative;
-    top: -20px; left: 40px;
-    }</code></pre></div>
-<p><em>top에 - 값을 주면 위쪽으로 20px만큼 이동</em>	</p>
-</li>
-<li>top, right, left, bottom 과 같은 프로퍼티 값을 주지않으면 static과 별 차이가 없는 것이 relative다.</li>
-<li>
-<p>absolute
-부모요소의 position이 fixed, relative, absolute이면 부모 기준으로 절대적으로 위치가 배치된다.
-(부모요소가 static이면 해당 position 적용 X)
+      </script><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="icon" href="/icons/icon-48x48.png?v=76da1c5b225fea9f85044e27522451b5"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#F7A046"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=76da1c5b225fea9f85044e27522451b5"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=76da1c5b225fea9f85044e27522451b5"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=76da1c5b225fea9f85044e27522451b5"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=76da1c5b225fea9f85044e27522451b5"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=76da1c5b225fea9f85044e27522451b5"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=76da1c5b225fea9f85044e27522451b5"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=76da1c5b225fea9f85044e27522451b5"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=76da1c5b225fea9f85044e27522451b5"/><title data-react-helmet="true">CSS Layout - Blog By HyeMin</title><meta data-react-helmet="true" name="description" content="CSS Layout"/><meta data-react-helmet="true" property="og:site_name" content="CSS Layout - Blog By HyeMin"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:title" content="CSS Layout - Blog By HyeMin"/><link as="script" rel="preload" href="/webpack-runtime-ceb2fb89de3cfb581a89.js"/><link as="script" rel="preload" href="/netlify-identity-widget-acb9f9e58c1eda4b61ce.js"/><link as="script" rel="preload" href="/app-ed5614858f0326025def.js"/><link as="script" rel="preload" href="/styles-c7182faa4668bce8648b.js"/><link as="script" rel="preload" href="/commons-69d86d378db9bba3a3b0.js"/><link as="script" rel="preload" href="/component---src-templates-post-template-js-e4ec5dc7ada652d06487.js"/><link as="fetch" rel="preload" href="/page-data/posts/til-csslayout/page-data.json" crossorigin="anonymous"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div class="Layout-module--layout--3Pyz6"><div><a class="Post-module--post__home-button--16Kl0" href="/">All Articles</a><div><div class="Content-module--content--3p512"><h1 class="Content-module--content__title--2BDW9">CSS Layout</h1><div class="Content-module--content__body--2TrQ-"><h2 id="1-position-property"><a href="#1-position-property" aria-label="1 position property permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Position property</h2>
+<p>position property는 element의 위치를 정하는데 사용함
+기본적인(statcic)을 제외하고 나머지 부분 정리</p>
+<h3 id="1-relative"><a href="#1-relative" aria-label="1 relative permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. relative</h3>
+<p>그자체로는 특별한 의미가 없지만 원래 위치를 기준으로 배치됨.
+상대적으로 배치 된 요소의 top, right, bottom, left 속성을 설정하면 일반위치에서 멀어지도록 조정됨.
+보통위치에서 상대적으로 요소가 자리를 잡기때문에 top과 같은 프로퍼티가 필요하고, top, right, left, bottom 과 같은 프로퍼티 값을 주지않으면 static과 별 차이가 없는 것이 relative다.</p>
+<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">div</span> <span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> -20px<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span>
+  //top에 - 값을 주면 위쪽으로 20px만큼 이동
+<span class="token punctuation">}</span></code></pre></div>
+<h3 id="2-absolute"><a href="#2-absolute" aria-label="2 absolute permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. absolute</h3>
+<p>부모요소의 position이 fixed, relative, absolute이면 부모 기준으로 절대적으로 위치가 배치된다.
+부모요소가 static이면 해당 position 적용되지않음.
 일반적으로 absolute를 쓸 경우 절대적으로 움직이고 싶은 부모에게 position : relative 를 부여한다.
-absolute position을 가지게되면, block element 가로크기는 content의 크기만큼이다! </p>
-<ul>
-<li>만약 position된 부모태그가 없으면, 해당 element 는 document body를 부모로 사용해서, 페이지가 스크롤링 될때마다 따라다닌다.</li>
-</ul>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&lt;style&gt;
-div.relative {
-  position: relative;
-  width: 400px;
-  height: 200px;
-  border: 3px solid #73AD21;
-} 
+absolute position을 가지게되면, block element 가로크기는 content의 크기만큼이다! 만약 position된 부모태그가 없으면, 해당 element 는 document body를 부모로 사용해서, 페이지가 스크롤링 될때마다 따라다닌다.</p>
+<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">&lt;style>
+  div.relative</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 3px solid #73AD21<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
 
-div.absolute {
-  position: absolute;
-  top: 40px;
-  right: 0;
-  width: 200px;
-  height: 100px;
-  border: 3px solid #73AD21;
-}
-&lt;/style&gt;</code></pre></div>
-<p>div.absolute의 위치는 부모element로 부터 위에서 부터 		40px 떨어져있고, 오른쪽에는 아주 딱 붙어있는 자리임!</p>
+  <span class="token selector">div.absolute</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span>
+    <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 3px solid #73AD21<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">/* div.absolute의 위치는 부모element로 부터 위에서 부터 		40px 떨어져있고, 오른쪽에는 아주 딱 붙어있는 자리임!
+
+  * top:-20px 이렇게 마이너스 값을 주니깐 element가 부모 	element 위쪽으로 이동했다 ! */</span>
+&lt;/style></code></pre></div>
+<h3 id="3-fixed"><a href="#3-fixed" aria-label="3 fixed permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. fixed</h3>
+<p>고정된 위치에 계속 배치되어있는 element, absolute는 relative나 이런 속성을 가진 부모가 필요했으나, fixed 는 필요없음
+스크롤을 내리든지, 안내리든지 간에 계속 화면에 고정된 부분에 뜨는 것 !
+top, right, bottom, left 값을 주어서 위치를 지정하고 거기에 고정시키는 것</p>
 <ul>
-<li>top:-20px 이렇게 마이너스 값을 주니깐 element가 부모 	element 위쪽으로 이동했다 ! </li>
+<li>이미지위치를 픽셀이 아닌 %로도 줄 수 있다.
+어떤 element 기준으로 위치시킬 때, left : 10px 이렇게가 아닌 %값을 주면
+부모element 너비의 기준으로 %만큼 이동하는 것.</li>
 </ul>
-</li>
-<li>
-<p>fixed
-고정된 위치에 계속 배치되어있는 element
-absolute는 relative나 이런 속성을 가진 부모가 필요했으나, fixed 는 필요없음
-<em>스크롤을 내리든지, 안내리든지 간에 계속 화면에 고정된 부분에 뜨는 것  !</em>
-top, right, bottom, left 값을 주어서 위치를 지정하고 거기에 고정시키는 것 </p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&lt;참고&gt;
-이미지위치를 픽셀이 아닌 %로도 줄 수 있다.
-어떤 element 기준으로 위치시킬 때, left :  10px 이렇게가 아닌 %값을 주면 
-부모element 너비의 기준으로 이동하는 것.
-예를 들어, 부모element의 너비가 100px 이었다면 내가 left : 50% 값을 주면 left로 50px만큼 이동했다는 것  !
-[해당내용 repl it : CSS 17에 나옴] </code></pre></div>
-</li>
-</ol>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">예를 들어, 부모element의 너비가 100px 이었다면 내가 left : 50% 값을 주면 left로 50px만큼 이동했다는 것 !
+[해당내용 repl it : CSS 17에 나옴]</code></pre></div>
 <h2 id="2-html-layout"><a href="#2-html-layout" aria-label="2 html layout permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. HTML Layout</h2>
 <p><strong>HTML 웹페이지는 주로 이러한 layout을 가지고 있다.</strong></p>
-<img src="https://www.w3schools.com/html/img_sem_elements.gif" vspace="20px" clear:both>
+<div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span>
+  <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://www.w3schools.com/html/img_sem_elements.gif<span class="token punctuation">"</span></span>
+  <span class="token attr-name">vspace</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>20px<span class="token punctuation">"</span></span>
+  <span class="token attr-name"><span class="token namespace">clear:</span>both</span>
+<span class="token punctuation">/></span></span></code></pre></div>
 <p>*각 태그는 semantic tag들로서 각 태그 이름자체가 의미를 가지고 있는 tag들이다.</p>
-<ol>
+<ul>
 <li>section :주로 제목을 포함한 내용의 그룹들을 section이라는 태그를 사용하여 제어한다.
 홈페이지는 보통 컨텐트, 내용정보, 소개 등의 섹션들로 나누어진다.</li>
 <li>article : 독립적이고 혼자만의 정보를 가지고 있는 요소들을 특정할 때, article을 쓴다.</li>
 <li>nav :navigation bar 나 , link들을 정의할 때 사용</li>
 <li>aside : 적혀있는 내용 이외에 내용을 넣는 컨텐트를 표현할 때 사용</li>
-</ol>
-<p><em>레이아웃은 한번에 잘짜기보다는 경험을 통해서 늘리고, 좋은 레이아웃을 가진 사이트에서 개발자도구를 보면서 어떻게 레이아웃을 잡았는지 알아가는 것이 중요</em></p>
-<h2 id="3-layout-잡을-때-주로-쓰이는-property"><a href="#3-layout-%EC%9E%A1%EC%9D%84-%EB%95%8C-%EC%A3%BC%EB%A1%9C-%EC%93%B0%EC%9D%B4%EB%8A%94-property" aria-label="3 layout 잡을 때 주로 쓰이는 property permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Layout 잡을 때 주로 쓰이는 Property</h2>
-<ol>
-<li>float
-이미지 주위를 텍스트로 감싸기 위해 만들어짐, 이미지를 떠있는 것처럼 만들고 그 주변으로 글씨가 나타나게끔 해준다.잡지를 보면서 사진이 한쪽에 있고 그 주변으로 글이 있는 거를 볼 수 있는데 그런 효과를 준다고 보면된다.</li>
-<li>float: left 하면 왼쪽으로 element가 뜨고, 그 주변으로 다른 요소들이 잡지의 사진 + 글형식으로 붙는다.</li>
-<li>float: right 하면 오른쪽으로 element가 뜨고, 그 주변으로 다른 요소들이 잡지의 사진 + 글형식으로 붙는다.</li>
+</ul>
+<p>레이아웃은 한번에 잘짜기보다는 경험을 통해서 늘리고, 좋은 레이아웃을 가진 사이트에서 개발자도구를 보면서 어떻게 레이아웃을 잡았는지 알아가는 것이 중요</p>
+<h2 id="3-layout-잡을-때-주로-쓰이는-다른-property들"><a href="#3-layout-%EC%9E%A1%EC%9D%84-%EB%95%8C-%EC%A3%BC%EB%A1%9C-%EC%93%B0%EC%9D%B4%EB%8A%94-%EB%8B%A4%EB%A5%B8-property%EB%93%A4" aria-label="3 layout 잡을 때 주로 쓰이는 다른 property들 permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Layout 잡을 때 주로 쓰이는 다른 Property들</h2>
+<h3 id="1-float"><a href="#1-float" aria-label="1 float permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. float</h3>
+<p>이미지 주위를 텍스트로 감싸기 위해 만들어짐, 이미지를 떠있는 것처럼 만들고 그 주변으로 글씨가 나타나게끔 해준다.잡지를 보면서 사진이 한쪽에 있고 그 주변으로 글이 있는 거를 볼 수 있는데 그런 효과를 준다고 보면된다.</p>
+<ul>
+<li>float: left
+왼쪽으로 element가 뜨고, 그 주변으로 다른 요소들이 잡지의 사진+ 글형식으로 붙는다.</li>
+<li>float: right<br>
+오른쪽으로 element가 뜨고, 그 주변으로 다른 요소들이 잡지의 사진+ 글형식으로 붙는다.</li>
 <li>float속성을 주면 뜨는 값이여서 부모element가 자식element의 높이를 인지 못해서 부모element보다 해당 element가 더 커지는 경우가 있다. 그럴 때 문제를 해결하기 위해서 overflow: hidden 속성이나, clear 를 사용해서 문제를 해결한다.</li>
-<li>clear
-float의 동작방식을 제어하는데 사용 </li>
-<li>
-<p>clear 속성은 쓰여지는 요소에 해당 element float 의 영향을 안받겠다고	말하는 것. float속성을 위에있는 element 가 쓰면 자연스럽게 다음 tag들이 그 element 주변을 둘러싸게 되는데 나는 그런 속성을 받지않을 거면 clear : both를 주면된다.(float property가 상속되는 것은 아님)</p>
-<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">Ex. 
-.after-box</span> <span class="token punctuation">{</span>
-  <span class="token property">clear</span> <span class="token punctuation">:</span> left<span class="token punctuation">;</span>
-<span class="token punctuation">}</span></code></pre></div>
-<p><em>after-box 라는 클래스이름을 가진 element는 float:left라	는 영향을 받지않을 것이다! 라고 말하는 것
-그러면 float : left를 준 element 옆쪽으로 글이 붙는 게 	아니라, 아예 새로운 줄에서 element 시작할 수 있음</em></p>
-</li>
-<li>clear : both 오른쪽왼쪽 float 둘다 영향 안받음</li>
-<li>원래 float 효과를 준 다음 element로 오면, float속	성이 붙어서 왼쪽 혹은 오른쪽 정렬이 되고,다음 요소도 		float 효과 영향 주기 위해서 자기 너비를 최소화하고, 다		음 요소가 올 수 있게 끔 해주는데 float 속성이 없는 		객체는 나머지 공간을 모두 차지한다! </li>
-</ol></div></div></div><div class="Post-module--post__footer--3WzWU"><div><p class="Meta-module--meta__date--29eD7">Published <!-- -->13 Aug 2019</p></div><div class="Tags-module--tags--1L_ct"><ul class="Tags-module--tags__list--91FqN"><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/tag/til/">TIL</a></li><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/tag/css/">CSS</a></li></ul></div><div class="Author-module--author--2Yefr"><p>Better than Yesterday !<a class="Author-module--author__bio-twitter--n-O9n" href="https://www.twitter.com/undefined" rel="noopener noreferrer" target="_blank"><strong>HyeMin Jeong</strong> on Twitter</a></p></div></div><div class="Post-module--post__comments--25y6I"></div></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/til-csslayout/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-ed5614858f0326025def.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-5efb7b8fb8a6286e0a5c.js"],"component---src-templates-not-found-template-js":["/component---src-templates-not-found-template-js-d18bc7fdbbbeafd2856e.js"],"component---src-templates-tags-list-template-js":["/component---src-templates-tags-list-template-js-be68217ed63783d1c1d4.js"],"component---src-templates-categories-list-template-js":["/component---src-templates-categories-list-template-js-e97b02a703e670b1d2f6.js"],"component---src-templates-page-template-js":["/component---src-templates-page-template-js-944406042558f271a35d.js"],"component---src-templates-post-template-js":["/component---src-templates-post-template-js-e4ec5dc7ada652d06487.js"],"component---src-templates-tag-template-js":["/component---src-templates-tag-template-js-b5c4d92b0d8fd39aec7b.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-eb2622e9ddc24503ebfc.js"],"component---src-templates-index-template-js":["/component---src-templates-index-template-js-6855110f1524b8830d5b.js"]};/*]]>*/</script><script src="/component---src-templates-post-template-js-e4ec5dc7ada652d06487.js" async=""></script><script src="/commons-154e10f751268b0220d0.js" async=""></script><script src="/styles-c7182faa4668bce8648b.js" async=""></script><script src="/app-ed5614858f0326025def.js" async=""></script><script src="/netlify-identity-widget-acb9f9e58c1eda4b61ce.js" async=""></script><script src="/webpack-runtime-ceb2fb89de3cfb581a89.js" async=""></script></body></html>
+</ul>
+<h3 id="2-clear"><a href="#2-clear" aria-label="2 clear permalink" class="anchor"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. clear</h3>
+<p>float의 동작방식을 제어하는데 사용</p>
+<ul>
+<li>clear 속성은 쓰여지는 요소에 해당 element float 의 영향을 안받겠다고 말하는 것이다.</li>
+<li>float속성을 위에있는 element 가 쓰면, 자연스럽게 다음 tag들이 그 element 주변을 둘러싸게 되는데 다른 element가 그런 속성을 받지않을 거면 clear : both를 주면된다.(float property가 상속되는 것은 아님)</li>
+</ul>
+<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">.after-box</span> <span class="token punctuation">{</span>
+  <span class="token property">clear</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">/* after-box 라는 클래스이름을 가진 element는 float:left라 는 영향을 받지않을 것이다! 라고 말하는 것
+그러면 float : left를 준 element 옆쪽으로 글이 붙는 게 아니라, 아예 새로운 줄에서 element 시작할 수 있음_ */</span></code></pre></div>
+<ul>
+<li>clear : both
+오른쪽왼쪽 float 둘다 영향 안받음</li>
+<li>원래 float 효과를 준 다음 element로 오면, float속성이 붙어서 왼쪽 혹은 오른쪽 정렬이 되고,다음 요소도 float 효과 영향 주기 위해서 자기 너비를 최소화하고, 다음 요소가 올 수 있게 끔 해주는데 float 속성이 없는 객체는 나머지 공간을 모두 차지한다!</li>
+</ul></div></div></div><div class="Post-module--post__footer--3WzWU"><div><p class="Meta-module--meta__date--29eD7">Published <!-- -->5 Aug 2019</p></div><div class="Tags-module--tags--1L_ct"><ul class="Tags-module--tags__list--91FqN"><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/tag/til/">TIL</a></li><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/tag/css/">CSS</a></li></ul></div><div class="Author-module--author--2Yefr"><p>Better than Yesterday !<a class="Author-module--author__bio-twitter--n-O9n" href="https://www.twitter.com/undefined" rel="noopener noreferrer" target="_blank"><strong>HyeMin Jeong</strong> on Twitter</a></p></div></div><div class="Post-module--post__comments--25y6I"></div></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/til-csslayout/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-ed5614858f0326025def.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-5efb7b8fb8a6286e0a5c.js"],"component---src-templates-not-found-template-js":["/component---src-templates-not-found-template-js-d18bc7fdbbbeafd2856e.js"],"component---src-templates-tags-list-template-js":["/component---src-templates-tags-list-template-js-be68217ed63783d1c1d4.js"],"component---src-templates-categories-list-template-js":["/component---src-templates-categories-list-template-js-e97b02a703e670b1d2f6.js"],"component---src-templates-page-template-js":["/component---src-templates-page-template-js-944406042558f271a35d.js"],"component---src-templates-post-template-js":["/component---src-templates-post-template-js-e4ec5dc7ada652d06487.js"],"component---src-templates-tag-template-js":["/component---src-templates-tag-template-js-b5c4d92b0d8fd39aec7b.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-eb2622e9ddc24503ebfc.js"],"component---src-templates-index-template-js":["/component---src-templates-index-template-js-6855110f1524b8830d5b.js"]};/*]]>*/</script><script src="/component---src-templates-post-template-js-e4ec5dc7ada652d06487.js" async=""></script><script src="/commons-69d86d378db9bba3a3b0.js" async=""></script><script src="/styles-c7182faa4668bce8648b.js" async=""></script><script src="/app-ed5614858f0326025def.js" async=""></script><script src="/netlify-identity-widget-acb9f9e58c1eda4b61ce.js" async=""></script><script src="/webpack-runtime-ceb2fb89de3cfb581a89.js" async=""></script></body></html>
