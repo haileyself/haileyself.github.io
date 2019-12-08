@@ -4,7 +4,7 @@ date: "2019-08-04T20:30:37.121Z"
 template: "post"
 draft: false
 slug: "/posts/til-csslayout/"
-category: "TIL"
+category: "Basic"
 tags:
   - "TIL"
   - "CSS"

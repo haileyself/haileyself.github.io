@@ -4,7 +4,7 @@ date: "2019-08-02T22:25:37.121Z"
 template: "post"
 draft: false
 slug: "/posts/til-htmlandcss_2/"
-category: "HTMLandCSS"
+category: "Basic"
 tags:
   - "TIL"
   - "CSS"
