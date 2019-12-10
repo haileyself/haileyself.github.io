@@ -1,6 +1,6 @@
 ---
 title: JavaScript 숫자 관련 Method
-date: "2019-08-15T20:30:37.121Z"
+date: "2019-08-15T15:30:37.121Z"
 template: "post"
 draft: false
 slug: "/posts/til-method-number/"
